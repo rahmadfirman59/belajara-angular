@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+
+<h1>Nama Hari </h1>
+
+<!-- Step 2 -->
+<h2 ng-repeat="val in namahari">{{val}}</h2>
+<h3 ng-repeat="val in namabulan">{{val}}</h3>
+
+<!-- Step 2 -->
+
+<!-- Step 1 -->
+<script>
+var app = angular.module("myApp", []);
+app.controller("myCtrl", function($scope) {
+  $scope.namahari = [
+    "Senin",
+    "Selasa",
+    "Rabu",
+    "Kamis",
+    "Jumat",
+    "Sabtu",
+    "Minggu",
+  ]
+
+  $scope.namabulan = [
+	"Januari",
+	"Ferbruari",
+	"Maret",
+	"April",
+	"Mei",
+	"Juni",
+	"Juli",
+	"Agustus",
+	"September",
+	"Oktober",
+	"November",
+	"Desember",
+	]
+});
+</script>
+<script>
+var app = angular.module("kuApp", []);
+app.controller("kuApp",function($scope){
+	
+});
+	
+</script>
+</body>
+</html>
